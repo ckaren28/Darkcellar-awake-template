@@ -62,6 +62,7 @@ export default {
   }
 }
 .card {
+  padding-bottom: 50px;
   @media (min-width: 768px) {
     height: 100%;
   }
@@ -93,6 +94,7 @@ export default {
     color: white;
     opacity: 0;
     transition: 0.4s ease all;
+    border-bottom: solid 1 px;
   }
   .card-content div,
   .card-content a {

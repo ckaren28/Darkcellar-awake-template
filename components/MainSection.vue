@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss">
 .page-main-section {
-  margin-top: 52px;
+  margin-top: 15vh;
 }
 .hero + .page-main-section {
   margin-top: initial;

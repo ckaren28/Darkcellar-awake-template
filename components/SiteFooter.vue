@@ -1,5 +1,12 @@
 <template>
   <footer class="site-footer">
+    <div>
+      <p>Icons</p>
+      <font-awesome-icon :icon="['fab', 'linkedin']" />
+      <font-awesome-icon :icon="['fab', 'github']" />
+      <font-awesome-icon :icon="['fab', 'facebook']" />
+      <font-awesome-icon :icon="['fas', 'coffee']" />
+    </div>
     {{ $siteConfig.siteName }} &copy; {{ new Date().getFullYear() }} - All
     Rights Reserved
     <br />

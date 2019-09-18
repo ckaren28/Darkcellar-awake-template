@@ -1,20 +1,5 @@
 <template>
   <div class="card">
-    <div class="card-image">
-      <nuxt-link :to="link">
-        <figure :class="`image is-${imageRatioClass}`">
-          <opti-image
-            v-if="image"
-            :src="responsiveImage.src"
-            :srcset="responsiveImage.srcSet"
-            :width="imageRatio[0]"
-            :height="imageRatio[1]"
-            :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
-          />
-          <loading-spinner position="absolute" />
-        </figure>
-      </nuxt-link>
-    </div>
     <div class="card-content">
       <div class="media">
         <div class="media-content">
@@ -41,6 +26,21 @@
           </nuxt-link>
         </div>
       </div>
+    </div>
+    <div class="card-image">
+      <nuxt-link :to="link">
+        <figure :class="`image is-${imageRatioClass}`">
+          <opti-image
+            v-if="image"
+            :src="responsiveImage.src"
+            :srcset="responsiveImage.srcSet"
+            :width="imageRatio[0]"
+            :height="imageRatio[1]"
+            :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
+          />
+          <loading-spinner position="absolute" />
+        </figure>
+      </nuxt-link>
     </div>
   </div>
 </template>

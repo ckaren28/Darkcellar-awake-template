@@ -10,6 +10,7 @@ export default {
     }
   ],
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  link: [{ rel: 'stylesheet', href: '<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">' }],
   script: [
     {
       src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
